@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atividade 2 - Geral</title>
+        <!--Meta charset UTF8 é utilizado para informar ao navegador que o documento está codificado em UTF8, garantido que acentuações e caracteres especiais sejam apresentados corretamente-->
+        <meta charset="UTF-8">
+        <!--A meta tag <meta name="viewport" content="width=device-width, initial-scale=1.0"> controla como a página é dimensionada em dispositivos móveis:
+        width=device-width define que a largura da “viewport” (área visível da página) deve ser igual à largura do dispositivo em pixels CSS, evitando que o navegador “enxergue” uma página muito larga num celular e faça zoom out automático.
+        initial-scale=1.0 ajusta o zoom inicial para 100%, sem ampliar nem reduzir.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="index.html">Pagina Inicial</a>
+        <h1>Atividade 2 - Geral</h1>
+        <img src="assets/Atividades_Segunda_Aula.jpeg" alt="Imagem com os conceitosde html a serem estudados" width="200">
+        <p>Pesquisar e aplicar os conceitos listados abaixo:</p>
+        <ol type="1">
+            <li>minlength</li>
+            <li>maxlength</li>
+            <li>step</li>
+            <li>required</li>
+            <li>value</li>
+            <li>size</li>
+        </ol>
+        <form action="/entrar" method="POST">
+            <label for="usuario">Usuário:</label>
+            <input type="email" id="email" size="50" name="email" placeholder="seuemail@dominio.com.br" autocomplete="email" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" size="20" maxlength="20" placeholder="senha min 6 max 20" required>
+            <br>
+            <label for="pais">Pais:</label>
+            <input type="text" id="pais" name="pais" value="Brasil">
+            <p>Selecione o planode assinatura desejado?</p>
+            <input type="radio" id="emagrecimento" name="assinatura" value="emagrecimento">
+            <label for="emagrecimento">Emagrecimento</label><br>
+            <input type="radio" id="massa" name="assinatura" value="massa">
+            <label for="massa">Ganho de Massa</label><br>
+            <input type="radio" id="saude" name="assinatura" value="saude">
+            <label for="saude">Tratamento de Saúde</label><br><br>
+            <label for="idade">Idade (mínimo 18):</label>
+            <input type="number" id="idade" name="idade" min="18" max="100">
+            <label for="reserva">Data da reserva (somente em 2024):</label>
+            <input type="date" id="reserva" name="reserva" min="2025-08-01" max="2025-12-31">
+            <br>
+            <p>Quais sua preferência de proteínas?</p>
+            <input type="checkbox" id="bovina" name="proteina" value="bovina">
+            <label for="bovina">Bovina</label><br>
+            <input type="checkbox" id="frango" name="proteina" value="frango">
+            <label for="frango">Frango</label><br>
+            <input type="checkbox" id="peixe" name="proteina" value="peixe">
+            <label for="peixe">Peixe</label><br>
+            <input type="checkbox" id="suino" name="proteina" value="suino">
+            <label for="suino">Suíno</label><br><br>   
+            <label for="qtd">Quantidade:</label>
+            <input type="number" id="qtd" name="qtd" min="1"><br><br>
+
+            <label for="doc">Envie seu currículo:</label>
+            <input type="file" id="doc" name="doc"><br><br>
+
+            <label for="cel">Celular:</label>
+            <input type="tel" id="cel" name="cel"><br><br>
+
+            <label for="reuniao">Agendar reunião:</label>
+            <input type="datetime-local" id="reuniao" name="reuniao"><br><br>
+    
+            <!-- Forma CORRETA de agrupar e estruturar -->
+            <div class="cardapio">
+                <h2>Risoto de Linguiça Blumenau</h2>
+                <p>Ingredientes: Arroz cateto, linguiça Blumenau, abóbora cabotia, sal e salsinha</p>
+            </div>
+            <div class="cardapio">
+                <h2>Parmegiana de Frango</h2>
+                <p>Ingredientes: Filé de peito de frango empanado com farinha funcional, purê de batata inglesa e legumes</p>
+            </div>
+
+            <!-- Vídeo com controles -->
+            <video width="640" controls>
+                <source src="assets/VideoBenedere.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+
+            <!-- Áudio com controles -->
+            <audio controls>
+                <source src="assets/🎵 Nosso Papel é Cuidar_.mp3" type="audio/mpeg">
+                Seu navegador não suporta a tag de áudio.
+            </audio>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HDnF1zGwufg?si=pnFDQeyJDvJu2mgO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- Botão para enviar TODOS os dados -->
+            <br><button type="submit">Entrar</button>
+        </form>
+
+    </body>
+</html>
