@@ -52,10 +52,27 @@
         <div>
             <h3>Minlength e Maxlength</h3>
             <p>Definem o número mínimo e máximo de caracteres permitidos em um campo de texto</p>
-            <h3>Exemplo:</h3>
+            <h4>Exemplo:</h4>
             <form action="/cadastrar" method="POST">
-                <label for="senha">Senha</label>
-                <input type="text" id="senha" name="senha" minlength="5" maxlength="20" required placeholder="5 a 20 caracteres">
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="text" id="senha" name="senha" minlength="5" maxlength="20" required placeholder="5 a 20 caracteres">
+                </div>
+                <h3>Step</h3>
+                <p>Define o incremento ou decremento para campos numéricos</p>
+                <h4>Exemplo:</h4>
+                <div>
+                    <label for="combo">Combo:</label>
+                    <input type="number" id="combo" name="combo" step="5">
+                </div>
+                <h3>Requerid</h3>
+                <p>Atributo que define que o campo é de preenchimmento obrigatório</p>
+                <h4>Exemplo:</h4>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
                 <button type="submit">Cadastrar</button>
             </form> 
         </div>
