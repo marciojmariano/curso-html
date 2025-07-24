@@ -12,6 +12,16 @@
     <body>
         <a href="index.html">Pagina Inicial</a>
         <div>
+            <a href="ativi2-geralmelhorada.html#value">Value</a>
+            <a href="ativi2-geralmelhorada.html#step">Step</a>
+            <a href="ativi2-geralmelhorada.html#Div">Div</a>
+            <a href="ativi2-geralmelhorada.html#Video">Video</a>
+            <a href="ativi2-geralmelhorada.html#Audio">Audio</a>
+            <a href="ativi2-geralmelhorada.html#Iframe">Iframe</a>
+            <a href="ativi2-geralmelhorada.html#Minlength">Minlength</a>
+            <a href="ativi2-geralmelhorada.html#Required">Required</a>
+        </div>
+        <div>
             <h1>Atividades Aula 2 - 20/07/2025</h1>
             <p>Pagina dedicada a apresentar a execução das atividades da Aula 2 do dia 20/07/2025.</p>
         </div>
@@ -20,11 +30,11 @@
             <p>Pesquisar, estudar e aplicar as tag's: div, video, audio e iframe.</p>
         </div>
         <div>
-            <h3>Div</h3>
+            <h3 id="Div">Div</h3>
             <p>A tag div é utilizada no agrupamentos de elementos comuns para facilitar a aplicação de CSS e JS facilitando a aplicação de estilo (CSS) e JS.</p>
         </div>
         <div>
-            <h3>Video</h3>
+            <h3 id="Video">Video</h3>
             <p>A tag video é utilizada para incorporar arquivos de vídeo na página, sem depender de plugins.</p>
             <h4>Exemplo:</h4>
             <video width="160" controls>
@@ -32,7 +42,7 @@
             </video>
         </div>
         <div>
-            <h3>Audio</h3>
+            <h3 id="Audio">Audio</h3>
             <p>A tag audio é utilizada para incorporar arquivos de audio na  página, sem depender de plugins.</p>
             <h4>Exemplo:</h4>
             <audio controls>
@@ -40,7 +50,7 @@
             </audio>
         </div>
         <div>
-            <h3>Iframe</h3>
+            <h3 id="Iframe">Iframe</h3>
             <p>A tag iframe é utilizada para criar uma janela dentro da página para exibir o conteúdo de outra página da web.</p>
             <h4>Exemplo:</h4>
                 <iframe src="https://giphy.com/embed/scZPhLqaVOM1qG4lT9" width="240" height="240"></iframe>
@@ -50,7 +60,7 @@
             <p>Pesquisar, estudar e aplicar os atributos: minlength, maxlength, step, required, value, size, min (aplicado a date e number), max (aplicado a date e number) e autocomplete</p>
         </div>
         <div>
-            <h3>Minlength e Maxlength</h3>
+            <h3 id="Minlength">Minlength e Maxlength</h3>
             <p>Definem o número mínimo e máximo de caracteres permitidos em um campo de texto</p>
             <h4>Exemplo:</h4>
             <form action="/cadastrar" method="POST">
@@ -58,21 +68,32 @@
                     <label for="senha">Senha</label>
                     <input type="text" id="senha" name="senha" minlength="5" maxlength="20" required placeholder="5 a 20 caracteres">
                 </div>
-                <h3>Step</h3>
+                <h3 id="step">Step</h3>
                 <p>Define o incremento ou decremento para campos numéricos</p>
                 <h4>Exemplo:</h4>
                 <div>
                     <label for="combo">Combo:</label>
                     <input type="number" id="combo" name="combo" step="5">
                 </div>
-                <h3>Requerid</h3>
+                <h3 id="Required">Required</h3>
                 <p>Atributo que define que o campo é de preenchimmento obrigatório</p>
                 <h4>Exemplo:</h4>
                 <div>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-
+                <h3 id="value">Value</h3>
+                <p>Atributo que define o valor inicial de um campo, ou o valor que será enviado ao backend</p>
+                <h4>Exemplo:</h4>
+                <div>
+                    <label for="pais">Pais:</label>
+                    <!-- Valor pré-preenchido -->
+                    <input type="text" name="pais" value="Brasil">
+                </div>
+                <div>
+                    <!-- Valor enviado ao backend -->
+                    <input type="radio" name="plano" value="brasil"> Brasil
+                </div>
                 <button type="submit">Cadastrar</button>
             </form> 
         </div>
