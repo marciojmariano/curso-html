@@ -5,4 +5,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+input {
+    /* top, left, bottom, right, topo, direita, base, esquerda */
+    padding-top: 4px;
+    padding-left: 6px;
+    padding-bottom: 5px;
+    padding-right: 7px;
 
+    /* Shorthand padding */
+    padding: 4px 6px 5px 7px;
+}
