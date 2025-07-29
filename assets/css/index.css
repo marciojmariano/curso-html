@@ -1,0 +1,8 @@
+/* CSS Reset (para remover da página margin e padding que não queremos */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+

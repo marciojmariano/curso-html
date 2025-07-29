@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- (não utilizar) CSS Via tag Style -->
+    <style>
+        button{
+            color: brown;
+        }
+    </style>
+    
+    <!-- Carregar um arquivo que contém as estilizações -->
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <div id="header">
+        <div class="header-logo">
+
+            <a href="index.html">
+                <img id="logo" src="assets/imagens/image.png" alt="">
+            </a>
+        </div>
+
+        <div class="header-nav">
+            <a href="produtos.html" class="produtos"><i class="fa-solid fa-bowl-food"></i> Produtos</a>
+            <a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i> Carrinho</a>
+            <a href="clientes.html"><i class="fa-solid fa-building"></i> Clientes</a>
+        </div>
+
+        <div class="header-login">
+            <a href="login.html"><i class="fa-solid fa-user"></i> Login</a>
+        </div>
+    </div>
+
+    <div>
+        <label for="campo-nome">Nome</label>    
+        <input type="text" id="campo-nome">
+    </div>
+
+    <!-- (não utilizar) CSS via atributo direto na tag do elemento que queremos estilizar -->
+    <button style="background-color: #8e8d8d;">Salvar</button>
+    <script src="https://kit.fontawesome.com/3c32900202.js" crossorigin="anonymous"></script>
+</body>
+</html>
